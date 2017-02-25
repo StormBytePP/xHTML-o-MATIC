@@ -69,11 +69,10 @@ final class xHTML_Properties {
 		$hasproperties = (empty($this->propertymap)) ? FALSE : TRUE;
 		foreach ($this->propertymap as $property => $value) {
 			$counter++;
-			if ($property!="id" || ($property=="id" && $this->showID)) {
-				$output.=$property . "='" . $value . "'";
-				if ($counter < count($this->propertymap)) {
-					$output.=" ";
-				}
+			if ($property == "id" && !$this->showID) continue;
+			$output.=$property . "='" . $value . "'";
+			if ($counter < count($this->propertymap)) {
+				$output.=" ";
 			}
 		}
 		if (!empty($this->cssclasses)) {
@@ -485,7 +484,7 @@ abstract class xHTML_Item {
 	 * @param bool $visible
 	 */
 	public function SetIDVisibility($visible) {
-		$this->showID=$visible;
+		$this->properties->ShowID($visible);
 	}
 	
 	/**
