@@ -6,19 +6,17 @@ This xHTML-o-MATIC is aimed to provide an OO way to handle, simplify and split t
 By using this mini framework, you can easily split HTML logic and structure in your code, making your whole project more readable with less HTML embedded to its PHP part while having a powerfull DOM-Like tree for handling the nodes you 
 want.
 
-To see more, look at usage_example.php file, which contains useful example with comments on some of key features.
-
 Usage Example
 =============
 ```php
 <?php
 
 /*******************************************************************/
-/** As it can be seen here, it is very easy to split basic        **/
-/** structure (that can be placed in your class constructor)      **/
-/** from page's content, that can be dynamically placed in your   **/
-/** member functions or similar.                                  **/
-/** Of course, its output is 100% xHTML 1.0 Transitional Valid    **/
+/*  As it can be seen here, it is very easy to split basic         */
+/*  structure (that can be placed in your class constructor)       */
+/*  from page's content, that can be dynamically placed in your    */
+/*  member functions or similar.                                   */
+/*  Of course, its output is 100% xHTML 1.0 Transitional Valid     */
 /*******************************************************************/
 
 require_once '/xHTML_All.php';

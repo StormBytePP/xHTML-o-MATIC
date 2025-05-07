@@ -6,14 +6,14 @@
 PROJECT_NAME           = xHTML-o-MATIC
 PROJECT_BRIEF          = "A mini framework for handling PHP web frontends."
 PROJECT_LOGO           = 
-OUTPUT_DIRECTORY        = html
+OUTPUT_DIRECTORY       = ./docs
 CREATE_SUBDIRS         = YES
 HTML_HEADER            = 
 HTML_FOOTER            = 
 HTML_STYLESHEET        = 
 
 # Input related configuration options
-INPUT                  = ../src
+INPUT                  = ./src README.md
 RECURSIVE              = YES
 EXCLUDE                = 
 EXCLUDE_SYMLINKS       = NO
@@ -26,10 +26,11 @@ GENERATE_RTF           = NO
 GENERATE_XML           = NO
 GENERATE_MAN           = NO
 GENERATE_DOCBOOK       = NO
-GENERATE_TREEVIEW      = NO
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
 
 # Output related configuration options
-HTML_OUTPUT            = html
+HTML_OUTPUT            = .
 HTML_FILE_EXTENSION    = .html
 HTML_DYNAMIC_SECTIONS  = YES
 
@@ -37,7 +38,6 @@ HTML_DYNAMIC_SECTIONS  = YES
 QUIET                  = NO
 WARN_IF_UNDOCUMENTED   = YES
 WARN_IF_DOC_ERROR      = YES
-GENERATE_TREEVIEW      = NO
 
 # Additional options
 ALIASES                = 
@@ -49,6 +49,6 @@ EXPAND_ONLY_PREDEF     = NO
 SEARCH_INCLUDES        = YES
 INLINE_INHERITED_MEMB  = NO
 FULL_PATH_NAMES        = YES
-STRIP_FROM_PATH        = ../src
+STRIP_FROM_PATH        = ./src
 
 # End of Doxyfile configuration
