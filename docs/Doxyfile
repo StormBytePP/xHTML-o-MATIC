@@ -1,0 +1,54 @@
+# Doxyfile
+
+# Doxyfile configuration for Doxygen documentation generation
+
+# Project related configuration options
+PROJECT_NAME           = xHTML-o-MATIC
+PROJECT_BRIEF          = "A mini framework for handling PHP web frontends."
+PROJECT_LOGO           = 
+OUTPUT_DIRECTORY        = html
+CREATE_SUBDIRS         = YES
+HTML_HEADER            = 
+HTML_FOOTER            = 
+HTML_STYLESHEET        = 
+
+# Input related configuration options
+INPUT                  = ../src
+RECURSIVE              = YES
+EXCLUDE                = 
+EXCLUDE_SYMLINKS       = NO
+EXCLUDE_PATTERNS       = 
+
+# Build related configuration options
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_RTF           = NO
+GENERATE_XML           = NO
+GENERATE_MAN           = NO
+GENERATE_DOCBOOK       = NO
+GENERATE_TREEVIEW      = NO
+
+# Output related configuration options
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_DYNAMIC_SECTIONS  = YES
+
+# Miscellaneous configuration options
+QUIET                  = NO
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+GENERATE_TREEVIEW      = NO
+
+# Additional options
+ALIASES                = 
+INPUT_ENCODING         = UTF-8
+USE_MDFILE_AS_MAINPAGE = README.md
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO
+SEARCH_INCLUDES        = YES
+INLINE_INHERITED_MEMB  = NO
+FULL_PATH_NAMES        = YES
+STRIP_FROM_PATH        = ../src
+
+# End of Doxyfile configuration
